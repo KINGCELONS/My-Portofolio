@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Achmad Nurhidayat | Portofolio Profesional</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    }
+  </script>
+
+  <!-- Google Font: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300 min-h-screen">
+
+  <!-- NAVIGATION -->
+  <nav class="sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-slate-950/80 border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+      <a href="#" class="font-bold text-lg text-slate-900 dark:text-white tracking-tight">
+        Achmad Nurhidayat
+      </a>
+
+      <div class="flex items-center gap-6">
+        <div class="hidden sm:flex gap-6 text-sm font-medium text-slate-600 dark:text-slate-300">
+          <a href="#tentang" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Tentang</a>
+          <a href="#keahlian" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Keahlian</a>
+          <a href="#pengalaman" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Pengalaman</a>
+          <a href="#pendidikan" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Pendidikan</a>
+        </div>
+
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" type="button" class="p-2 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg text-sm focus:outline-none" aria-label="Toggle Mode">
+          <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+          </svg>
+          <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.707.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 100 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="tentang" class="max-w-5xl mx-auto px-4 sm:px-6 py-12 sm:py-20 flex flex-col md:flex-row items-center gap-8 sm:gap-12">
+    <div class="flex-1 space-y-4 text-left">
+      <span class="px-3 py-1 text-xs font-semibold rounded-full bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300">
+        Web Developer & Operations Specialist
+      </span>
+      <h1 class="text-3xl sm:text-5xl font-bold text-slate-900 dark:text-white tracking-tight">
+        Achmad Nurhidayat
+      </h1>
+      <p class="text-slate-600 dark:text-slate-300 text-base leading-relaxed">
+        Lulusan S1 Teknik Informatika Universitas Pamulang yang memiliki pengalaman kerja di bidang operasional serta pengembangan web. Memiliki pemahaman dalam pembuatan website menggunakan HTML, CSS, PHP, dan MySQL. Terbiasa bekerja secara terstruktur, teliti, dan memiliki kemampuan kerja sama tim yang baik.
+      </p>
+
+      <div class="pt-2 flex flex-col sm:flex-row gap-3 text-sm text-slate-600 dark:text-slate-400">
+        <a href="mailto:dayatachmadnurhidayat@gmail.com" class="flex items-center gap-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
+          ✉️ <span>dayatachmadnurhidayat@gmail.com</span>
+        </a>
+        <span class="hidden sm:inline">•</span>
+        <div class="flex items-center gap-2">
+          📞 <span>0857 1039 6460</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROFILE IMAGE / AVATAR -->
+    <div class="w-44 h-44 sm:w-56 sm:h-56 rounded-2xl overflow-hidden border-2 border-slate-200 dark:border-slate-800 shadow-sm flex-shrink-0">
+      <img src="img/WhatsApp Image 2026-10-23 at 20.23.59.jpeg" alt="Achmad Nurhidayat" class="w-full h-full object-cover" />
+    </div>
+  </section>
+
+  <!-- KEAHLIAN -->
+  <section id="keahlian" class="max-w-5xl mx-auto px-4 sm:px-6 py-10 border-t border-slate-200 dark:border-slate-900">
+    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white mb-6">Keahlian & Kompetensi</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Web Development -->
+      <div class="p-5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+        <h3 class="text-sm font-semibold text-blue-600 dark:text-blue-400 mb-3">Web Development</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-2.5 py-1 text-xs rounded-md bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium">HTML</span>
+          <span class="px-2.5 py-1 text-xs rounded-md bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium">CSS</span>
+          <span class="px-2.5 py-1 text-xs rounded-md bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium">PHP</span>
+          <span class="px-2.5 py-1 text-xs rounded-md bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium">JavaScript</span>
+        </div>
+      </div>
+
+      <!-- Database Management -->
+      <div class="p-5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+        <h3 class="text-sm font-semibold text-blue-600 dark:text-blue-400 mb-3">Database Management</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-2.5 py-1 text-xs rounded-md bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium">MySQL</span>
+          <span class="px-2.5 py-1 text-xs rounded-md bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium">phpMyAdmin</span>
+        </div>
+      </div>
+
+      <!-- Operasional & Sistem -->
+      <div class="p-5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+        <h3 class="text-sm font-semibold text-blue-600 dark:text-blue-400 mb-3">Operasional & Sistem</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-2.5 py-1 text-xs rounded-md bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium">Stock Opname</span>
+          <span class="px-2.5 py-1 text-xs rounded-md bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium">Pencatatan Data</span>
+          <span class="px-2.5 py-1 text-xs rounded-md bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium">Pemeriksaan Stok</span>
+          <span class="px-2.5 py-1 text-xs rounded-md bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium">Penataan Area Kerja</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PENGALAMAN KERJA -->
+  <section id="pengalaman" class="max-w-5xl mx-auto px-4 sm:px-6 py-10 border-t border-slate-200 dark:border-slate-900">
+    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white mb-6">Pengalaman Kerja</h2>
+    <div class="space-y-6">
+      
+      <!-- Experience 1 -->
+      <div class="p-6 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-3">
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white">Staf Operasional Swalayan</h3>
+          <span class="text-xs font-semibold px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-800 text-blue-600 dark:text-blue-400 w-fit">
+            Hari Hari Swalayan
+          </span>
+        </div>
+        <ul class="space-y-1.5 text-sm text-slate-600 dark:text-slate-300">
+          <li class="flex items-start gap-2">
+            <span class="text-blue-600 dark:text-blue-400 mt-1">•</span>
+            <span>Melakukan stock opname dan pengecekan ketersediaan barang secara berkala.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-blue-600 dark:text-blue-400 mt-1">•</span>
+            <span>Menata serta melakukan display produk agar rapi dan mudah ditemukan.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-blue-600 dark:text-blue-400 mt-1">•</span>
+            <span>Melakukan penimbangan, pengemasan, dan packing produk.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-blue-600 dark:text-blue-400 mt-1">•</span>
+            <span>Memastikan kerapian display serta kesesuaian informasi harga barang.</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Experience 2 -->
+      <div class="p-6 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-3">
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white">Mailing Room & Housekeeping</h3>
+          <span class="text-xs font-semibold px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-800 text-blue-600 dark:text-blue-400 w-fit">
+            PT ISS Indonesia – Area Bukalapak
+          </span>
+        </div>
+        <ul class="space-y-1.5 text-sm text-slate-600 dark:text-slate-300">
+          <li class="flex items-start gap-2">
+            <span class="text-blue-600 dark:text-blue-400 mt-1">•</span>
+            <span>Membantu kegiatan operasional mailing room.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-blue-600 dark:text-blue-400 mt-1">•</span>
+            <span>Menangani penerimaan, penataan, dan distribusi dokumen atau surat sesuai kebutuhan operasional.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-blue-600 dark:text-blue-400 mt-1">•</span>
+            <span>Menjaga kebersihan serta kerapian area kerja.</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Experience 3 -->
+      <div class="p-6 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-3">
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white">Housekeeping & Operasional</h3>
+          <span class="text-xs font-semibold px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-800 text-blue-600 dark:text-blue-400 w-fit">
+            PT ISS Indonesia – Area Monee Insure
+          </span>
+        </div>
+        <ul class="space-y-1.5 text-sm text-slate-600 dark:text-slate-300">
+          <li class="flex items-start gap-2">
+            <span class="text-blue-600 dark:text-blue-400 mt-1">•</span>
+            <span>Melakukan pemeriksaan kebersihan area kerja dan fasilitas kantor.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-blue-600 dark:text-blue-400 mt-1">•</span>
+            <span>Melakukan pengecekan serta pencatatan stok makanan ringan (snack).</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-blue-600 dark:text-blue-400 mt-1">•</span>
+            <span>Memastikan fasilitas dan lingkungan kerja tetap bersih, rapi, dan nyaman digunakan.</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PENDIDIKAN & SERTIFIKAT -->
+  <section id="pendidikan" class="max-w-5xl mx-auto px-4 sm:px-6 py-10 border-t border-slate-200 dark:border-slate-900 grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div>
+      <h2 class="text-xl font-bold text-slate-900 dark:text-white mb-6">Pendidikan</h2>
+      <div class="space-y-4">
+        
+        <div class="p-5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+          <div class="font-bold text-slate-900 dark:text-white">Universitas Pamulang</div>
+          <div class="text-sm text-blue-600 dark:text-blue-400">S1 Teknik Informatika</div>
+          <div class="text-xs text-slate-500 dark:text-slate-400 mt-2">Lulus 2025</div>
+        </div>
+
+        <div class="p-5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+          <div class="font-bold text-slate-900 dark:text-white">SMK Letris</div>
+          <div class="text-sm text-blue-600 dark:text-blue-400">Jurusan Pemasaran</div>
+          <div class="text-xs text-slate-500 dark:text-slate-400 mt-2">Lulus 2018</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div>
+      <h2 class="text-xl font-bold text-slate-900 dark:text-white mb-6">Sertifikasi & Pelatihan</h2>
+      <div class="space-y-4">
+        
+        <div class="p-5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+          <div class="font-bold text-slate-900 dark:text-white text-sm">Uji Kompetensi Komputer - Network Administration</div>
+          <div class="text-xs text-blue-600 dark:text-blue-400 mt-1">Universitas Pamulang / LSP</div>
+          <div class="text-xs text-slate-500 dark:text-slate-400 mt-2">Nomor: 0058/SKK/LSP-UNPAM/2025</div>
+        </div>
+
+        <div class="p-5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+          <div class="font-bold text-slate-900 dark:text-white text-sm">TOEFL Certification (Score: 337)</div>
+          <div class="text-xs text-blue-600 dark:text-blue-400 mt-1">Level: Beginner</div>
+          <div class="text-xs text-slate-500 dark:text-slate-400 mt-2">Nomor: 0236/LBU/IV/2024</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-200 dark:border-slate-900 py-8 text-center text-xs text-slate-500 dark:text-slate-400">
+    <p>© 2026 Achmad Nurhidayat. Seluruh hak cipta dilindungi.</p>
+  </footer>
+
+  <!-- JAVASCRIPT UNTUK TOGGLE DARK/LIGHT MODE -->
+  <script>
+    const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+    const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+      themeToggleLightIcon.classList.remove('hidden');
+    } else {
+      document.documentElement.classList.remove('dark');
+      themeToggleDarkIcon.classList.remove('hidden');
+    }
+
+    const themeToggleBtn = document.getElementById('theme-toggle');
+
+    themeToggleBtn.addEventListener('click', function() {
+      themeToggleDarkIcon.classList.toggle('hidden');
+      themeToggleLightIcon.classList.toggle('hidden');
+
+      if (localStorage.getItem('color-theme')) {
+        if (localStorage.getItem('color-theme') === 'light') {
+          document.documentElement.classList.add('dark');
+          localStorage.setItem('color-theme', 'dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+          localStorage.setItem('color-theme', 'light');
+        }
+      } else {
+        if (document.documentElement.classList.contains('dark')) {
+          document.documentElement.classList.remove('dark');
+          localStorage.setItem('color-theme', 'light');
+        } else {
+          document.documentElement.classList.add('dark');
+          localStorage.setItem('color-theme', 'dark');
+        }
+      }
+    });
+  </script>
+</body>
+</html>
